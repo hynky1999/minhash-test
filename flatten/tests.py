@@ -22,6 +22,7 @@ from assignment import flatten
         ([None, [True, [False]]], [None, True, False]),
         ([[[0]], [1, [2], [], [[3]]]], [0, 1, 2, 3]),
         ([["ab", ["cd"]], "ef"], ["ab", "cd", "ef"]),
+        ([[[[[[[[[5]]]]]]]]], [5]),  # deeply nested 10 levels
     ],
 )
 def test_flatten_parametrized(inp, expected):

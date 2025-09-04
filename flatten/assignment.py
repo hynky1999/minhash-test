@@ -13,6 +13,7 @@ Rules:
 
 Examples:
 - flatten([1, [2, 3], 4]) -> [1, 2, 3, 4]
+- flatten([[[[[[[[[5]]]]]]]]]) -> [5]
 - flatten([[[]]]) -> []
 - flatten([1, [2, [3, [4]]], 5]) -> [1, 2, 3, 4, 5]
 - flatten([1, (2, 3), [4, (5, 6)]]) -> [1, (2, 3), 4, (5, 6)]  # tuples are NOT flattened
